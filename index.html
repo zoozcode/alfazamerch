@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alfaza merch</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <link rel="icon" type="image/x-icon" href="image/am.png">
+     <!-- CSS Splide -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+<!-- JS Splide -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+     <style>
+   
+
+.containera{
+   display: flex;
+    justify-content: center;
+    width: 100%;
+}
+     
+   .produk {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px 200px;
+  gap: 20px; /* jarak antar item */
+
+}
+
+.card{
+  /* border: solid; */
+ box-shadow: 5px 0 10px -5px rgba(0,0,0,0.6), /* kanan */
+              -5px 0 10px -5px rgba(0,0,0,0.6); /* kiri */
+              cursor: pointer;
+              transition: transform 0.3s ease;
+}
+
+.card:hover{
+   transform: scale(1.10); /* zoom in 5% */
+}
+.card h2{
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card p{
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.produk img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  
+}
+
+/* Saat layar max 768px → hanya 2 kolom */
+@media (max-width: 768px) {
+  .produk {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+    column-gap: 15px;
+    row-gap: 20px;
+  }
+  .hero {
+    width: 90%!important;
+    margin-left: 5%!important;
+  }
+
+  .am img{
+    width: 50px;
+  }
+}
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.splide__track{
+  margin: 20PX;
+}
+
+.hero {
+  position: relative;
+  width: 96%;
+  height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+margin-left: 2%;
+  background-image: url("image/ba.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  color: white;
+}
+
+/* Overlay gradasi biar teks lebih jelas */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 500px;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 20px;
+   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 768px){
+  .hero h1{
+    font-size: 26px;
+  }
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: white;
+  color: black;
+}
+
+.btn.primary:hover {
+  background: #ddd;
+}
+
+.btn.secondary {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.btn.secondary:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+
+     </style>
+</head>
+<body style="overflow-x: hidden;">
+   <!-- promo -->
+    <div class="border-b border-gray-200 bg-indigo-600 px-4 py-2 text-white">
+  <p class="text-center font-medium">
+    PROMO HINGGA 60%
+    <a href="product.html" class="inline-block underline"> Berlaku untuk hari ini saja </a>
+  </p>
+</div>
+<!-- endpromo -->
+
+<!-- navbar -->
+  <nav class="py-0 md:py-4 bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        
+        <!-- Logo -->
+        <div class="flex items-center">
+          <div class="am">
+            <img src="image/am.png" width="90px" alt=""> 
+          </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="index.html" class="text-gray-700 hover:text-teal-600">Home</a>
+          <a href="product.html" class="text-gray-700 hover:text-teal-600">Product</a>
+          <a href="faq.html" class="text-gray-700 hover:text-teal-600">FAQ</a>
+          <a href="about.html" class="text-gray-700 hover:text-teal-600">About Us</a>
+          <a href="order.html" class="text-gray-700 hover:text-teal-600">Order</a>
+        </div>
+
+        <!-- Login / Register -->
+        <div class="hidden md:flex space-x-3 items-center">
+            <a href="faq.html" class="bg-gray-100 text-teal-600 px-4 py-2 rounded-md hover:bg-gray-200">Cara Belanja</a>
+            <a href="https://wa.me/6285601758283
+?text=hi%20min%20saya%20berminat%20memesan%20sablon%20kaos%20di%20Alfaza%20Merch" class="bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700">Chat Admin</a>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="text-gray-700 focus:outline-none">
+            <span class="material-symbols-outlined">
+menu
+</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden px-4 pb-4 space-y-2">
+      <a href="index.html" class="block text-gray-700 hover:text-teal-600">Home</a>
+      <a href="product.html" class="block text-gray-700 hover:text-teal-600">Product</a>
+      <a href="faq.html" class="block text-gray-700 hover:text-teal-600">FAQ</a>
+      <a href="about.html" class="block text-gray-700 hover:text-teal-600">About Us</a>
+      <a href="order.html" class="block text-gray-700 hover:text-teal-600">Order</a>
+      <a href="faq.html" class="block bg-gray-100 text-teal-600 px-4 py-2 rounded-md">Cara Belanja</a>
+      <a href="https://wa.me/6285601758283
+?text=hi%20min%20saya%20berminat%20memesan%20sablon%20kaos%20di%20Alfaza%20Merch" class="block bg-teal-600 text-white px-4 py-2 rounded-md">Chat Admin</a>
+    </div>
+  </nav>
+ <!-- endnavbar -->
+
+ <!-- call to action-->
+  <section
+  class="overflow-hidden bg-[url(https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=2670&auto=format&fit=crop)] bg-cover bg-top bg-no-repeat"
+>
+  <div class="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
+    <div class="text-center ltr:sm:text-left rtl:sm:text-right">
+      <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">Alfaza Merch</h2>
+
+      <p class="max-w-lg text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed text-xs md:text-lg">
+        Alfaza Merch menghadirkan kaos sablon bersih dan modern. Desain sederhana, kualitas premium, cocok untuk gaya sehari-hari yang stylish tanpa berlebihan.
+      </p>
+
+      <div class="mt-4 sm:mt-8">
+        <a
+          href="#"
+          class="inline-block rounded-full bg-indigo-700 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-800 "
+        >
+          Get Yours Today
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- end call to action-->
+
+  <!-- produk list --> 
+       <section>
+  <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+    <header>
+      <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">Product Terlaris </h2>
+
+      <p class="mt-3 max-w-md text-gray-500">
+        Produk terlaris dari <b>ALFAZA MERCH</b>  yang sudah terjual ratusan hingga ribuan pcs
+      </p>
+    </header>
+
+    <div class="mt-2">
+      <p class="text-sm text-gray-500">Showing <span> 6 </span> of 40</p>
+    </div>
+</section>
+
+<div class="containera mb-3 mt-[-20px]">
+  
+  <div class="produk">
+    <div class="card">
+      <img src="image/sa1.png" alt="">
+      <h2>oblong 1</h2>
+      <p>Rp 50.000</p>
+  </div>
+  <div class="card">
+    <img src="image/sa4.png" alt="">
+    <h2>oblong 2</h2>
+    <p>Rp 55.000</p>
+  </div>
+  <div class="card">
+    <img src="image/sa3.png" alt="">
+    <h2>oblong 3</h2>
+    <p>Rp 60.000</p>
+  </div>
+  <div class="card">
+    <img src="image/sa5.jpg" alt="">
+    <h2>oblong 4</h2>
+    <p>Rp 40.000</p>
+  </div>
+  <div class="card">
+    <img src="image/sa7.png" alt="">
+    <h2>oblong 5</h2>
+    <p>Rp 45.000</p>
+  </div>
+  <div class="card">
+    <img src="image/sa6.png" alt="">
+    <h2>oblong 6</h2>
+    <p>Rp 50.000</p>
+  </div>
+</div>
+</div>
+
+   <section>
+  <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+    <header>
+     <h2 class="text-xl font-bold text-gray-900 sm:text-3xl mb-0">Koleksi Pilihan </h2>
+
+
+</section>
+
+<div id="image-carousel" class="splide mt-[-40px] mb-16" aria-label="Beautiful Images">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide"><img src="image/kaos1.png" alt="Baju 1"></li>
+      <li class="splide__slide"><img src="image/kaos2.png" alt="Baju 2"></li>
+      <li class="splide__slide"><img src="image/kaos3.png" alt="Baju 3"></li>
+      <li class="splide__slide"><img src="image/kaos4.png" alt="Baju 4"></li>
+    </ul>
+  </div>
+</div>
+
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Jasa sablon kaos DTF</h1>
+    <div class="btn-group">
+      <a href="https://wa.me/6285601758283
+?text=hi%20min%20saya%20berminat%20memesan%20sablon%20kaos%20di%20Alfaza%20Merch" class="btn primary">Chat Admin</a>
+      <a href="faq.html" class="btn secondary">Cara Belanja</a>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="bg-white dark:bg-gray-900">
+    <div class="container px-6 py-10 mx-auto">
+        <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
+            Testimoni <span class="text-blue-500 ">Client</span> Kami
+        </h1>
+
+        
+
+        <div class="grid grid-cols-1 gap-8 mx-auto mt-8 lg:grid-cols-2 xl:mt-10 max-w-7xl">
+            <div class="p-6 bg-gray-100 rounded-lg dark:bg-gray-800 md:p-8">
+                <p class="leading-loose text-gray-500 dark:text-gray-300">
+                    “Pelayanan cepat, harga terjangkau, tapi kualitasnya premium. Sablon terlihat solid, halus, dan tahan lama. Sudah saya bandingkan dengan tempat lain, dan di sini hasilnya jauh lebih baik. Sangat recommended untuk kebutuhan personal maupun bisnis”.
+                </p>
+
+                <div class="flex items-center mt-6">
+                    <img class="object-cover rounded-full w-14 h-14" src="image/cowo.jpg" alt="">
+                    
+                    <div class="mx-4">
+                        <h1 class="font-semibold text-blue-500">Haikal</h1>
+                        <span class="text-sm text-gray-500 dark:text-gray-300">Owner Ayam Bakar</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-6 bg-gray-100 rounded-lg dark:bg-gray-800 md:p-8">
+                <p class="leading-loose text-gray-500 dark:text-gray-300">
+                    “Saya pesan kaos untuk acara komunitas, dan hasilnya keren banget. Sablonnya rapi, warna sesuai desain, serta terasa nyaman dipakai. Setelah dicuci berkali-kali pun sablonnya tetap awet, tidak pecah sama sekali. Semua anggota puas dengan hasilnya.”.
+                </p>
+
+                <div class="flex items-center mt-6">
+                    <img class="object-cover rounded-full w-14 h-14" src="image/cewe.jpg" alt="">
+                    
+                    <div class="mx-4">
+                        <h1 class="font-semibold text-blue-500">Sinta</h1>
+                        <span class="text-sm text-gray-500 dark:text-gray-300">Manager PT. Cahaya Abadi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+   <!-- end produk list -->
+
+   <!-- footer -->
+   
+
+
+<div class="mt-[-100px] md:mt-[-80px]">
+<footer class="bg-white">
+  <div class="mx-auto max-w-screen-xl px-4 pt-16 pb-8 sm:px-6 lg:px-8">
+    
+
+    <div class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
+      <div class="mx-auto max-w-sm lg:max-w-none">
+        <p class="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">
+         Butuh sablon kaos DTF berkualitas? Di sini tempatnya! Hasil cetak tajam, awet meski sering dicuci, dan sudah dipercaya banyak pelanggan. Yuk, order sekarang.
+        </p>
+
+        <div class="mt-6 flex justify-center gap-4 lg:justify-start">
+         <a href="https://web.facebook.com/profile.php?id=61574962905835" target="_blank" rel="noreferrer" 
+     class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-gray-600 transition">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.2V12h2.5l-.4 3h-2v7A10 10 0 0 0 22 12z"/>
+    </svg>
+  </a>
+
+  <!-- TikTok -->
+  <a href="https://www.tiktok.com/@alfazamerch" target="_blank" rel="noreferrer" 
+     class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-gray-600 transition">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 256 256">
+      <path d="M192 56a48 48 0 01-48-48h-32v152a32 32 0 11-32-32v-32a64 64 0 1064 64V96a79.4 79.4 0 0048 16z"/>
+    </svg>
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/6285601758283" target="_blank" rel="noreferrer" 
+     class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-gray-600 transition">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 256 256">
+      <path d="M128 24a104 104 0 00-88.4 160.7L32 232l48.2-7.6A104 104 0 10128 24zm0 192a88 88 0 01-44.2-11.8l-3.4-2-28.6 4.5 4.7-27.9-1.8-3.5A88 88 0 11128 216zm47.1-64.9c-2.6-1.3-15.4-7.6-17.8-8.5s-4.1-1.3-5.8 1.3-6.6 8.5-8.1 10.2-3 1.9-5.6.6c-15.2-7.6-25.2-13.6-35.3-30.9-2.7-4.7 2.7-4.4 7.6-14.7.9-1.9.5-3.5-.3-4.8s-5.8-13.9-8-19c-2.1-5-4.2-4.3-5.8-4.4-1.5-.1-3.3-.1-5.1-.1s-4.8.6-7.3 3.5-9.6 9.4-9.6 22.9 9.8 26.6 11.1 28.5 19.3 29.5 46.8 41.4c6.5 2.8 11.6 4.5 15.6 5.8 6.5 2.1 12.4 1.8 17.1 1.1 5.2-.8 15.9-6.5 18.1-12.8s2.2-11.7 1.5-12.8c-.6-1.1-2.4-1.8-5-3.1z"/>
+    </svg>
+  </a>
+
+  <!-- YouTube -->
+  <a href="https://www.youtube.com/@ibnuofficial017" target="_blank" rel="noreferrer" 
+     class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-gray-600 transition">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 256 256">
+      <path d="M250.3 80.7a32 32 0 00-22.5-22.6C213.5 54 128 54 128 54s-85.5 0-99.8 4.1a32 32 0 00-22.5 22.6C2 95.1 2 128 2 128s0 32.9 3.7 47.3a32 32 0 0022.5 22.6C42.5 202 128 202 128 202s85.5 0 99.8-4.1a32 32 0 0022.5-22.6C254 160.9 254 128 254 128s0-32.9-3.7-47.3zM104 160V96l64 32-64 32z"/>
+    </svg>
+  </a>
+         
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-8 text-center lg:grid-cols-2 lg:text-left">
+        
+
+        <div>
+          <strong class="font-medium text-2xl text-gray-900"> Menu </strong>
+
+          <ul class="mt-6 space-y-1">
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="index.html"> Home </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="product.html"> Product </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="faq.html"> FAQ </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="about.html"> About Us </a>
+            </li>
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="order.html"> Order </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <strong class="font-medium text-2xl text-gray-900"> Kontak </strong>
+
+          <ul class="mt-6 space-y-1">
+            <li>
+              <p><span class="material-symbols-outlined" style="font-size: 18px;">
+mark_email_unread
+</span> alfazamerch@gmail.com</p>
+            </li>
+
+            <li>
+              <p> <span class="material-symbols-outlined" style="font-size: 18px;">
+add_call
+</span> +62 856 0175 8283</p>
+            </li>
+
+            <li>
+             <p><span class="material-symbols-outlined" style="font-size: 18px;">
+add_location_alt
+</span> Jl. Tirta Samudra RT 16/05 Bandengan</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-16 border-t border-gray-100 pt-8">
+      <p class="text-center text-xs/relaxed text-gray-500">
+        Copyright 2025 © Alfaza Merch
+      </p>
+    </div>
+  </div>
+</footer>
+</div>
+
+
+
+    <!-- endfooter -->
+</body>
+<script>
+const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu')
+
+btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+});
+
+
+  document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#image-carousel', {
+      type   : 'loop',     // bisa "slide" atau "loop"
+      perPage: 3,          // tampil 3 gambar per slide
+      gap    : '1rem',     // jarak antar gambar
+      autoplay: true,      // otomatis jalan
+      interval: 3000,      // ganti slide tiap 3 detik
+      breakpoints: {
+        768: { perPage: 2 }, // tablet max 768px → 2 gambar
+        480: { perPage: 1 }  // hp max 480px → 1 gambar
+      }
+    } ).mount();
+  } );
+  </script>
+</html>

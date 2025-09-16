@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alfaza merch</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <link rel="icon" type="image/x-icon" href="image/am.png">
+     <style>
+        @media (max-width:768px){
+            .am img{
+             width: 50px;
+             }
+        }
+
+        .jin{
+            width: 90%;
+            height: 16vh;
+            background-image: linear-gradient(to right, #ff0059, #ff0073, #ff0090, #ff00af, #ff00cf, #ff00cf, #ff00cf, #ff00cf, #ff00af, #ff0090, #ff0073, #ff0059);
+            border-radius: 20px;
+            margin-left: 5%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .jin h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            color: white;
+            line-height: 16vh;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+        }
+
+        @media (max-width:768px){
+            .jin{
+                width: 96%;
+                height: 12vh;
+                margin-left: 2%;
+                margin-bottom: 10px;
+            }
+
+            .jin h2{
+                line-height: 12vh;
+            }
+        }
+     </style>
+</head>
+<body>
+    <!-- navbar -->
+  <nav class="py-0 md:py-4 bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        
+        <!-- Logo -->
+        <div class="flex items-center">
+          <div class="am">
+            <img src="image/am.png" width="90px" alt=""> 
+          </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="index.html" class="text-gray-700 hover:text-teal-600">Home</a>
+          <a href="product.html" class="text-gray-700 hover:text-teal-600">Product</a>
+          <a href="faq.html" class="text-gray-700 hover:text-teal-600">FAQ</a>
+          <a href="about.html" class="text-gray-700 hover:text-teal-600">About Us</a>
+          <a href="order.html" class="text-gray-700 hover:text-teal-600">Order</a>
+        </div>
+
+        <!-- Login / Register -->
+        <div class="hidden md:flex space-x-3 items-center">
+            <a href="faq.html" class="bg-gray-100 text-teal-600 px-4 py-2 rounded-md hover:bg-gray-200">Cara Belanja</a>
+            <a href="https://wa.me/6285601758283
+?text=hi%20min%20saya%20berminat%20memesan%20sablon%20kaos%20di%20Alfaza%20Merch" class="bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700">Chat Admin</a>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="text-gray-700 focus:outline-none">
+            <span class="material-symbols-outlined">
+menu
+</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden px-4 pb-4 space-y-2">
+      <a href="index.html" class="block text-gray-700 hover:text-teal-600">Home</a>
+      <a href="product.html" class="block text-gray-700 hover:text-teal-600">Product</a>
+      <a href="faq.html" class="block text-gray-700 hover:text-teal-600">FAQ</a>
+      <a href="about.html" class="block text-gray-700 hover:text-teal-600">About Us</a>
+      <a href="order.html" class="block text-gray-700 hover:text-teal-600">Order</a>
+      <a href="faq.html" class="block bg-gray-100 text-teal-600 px-4 py-2 rounded-md">Cara Belanja</a>
+      <a href="https://wa.me/6285601758283
+?text=hi%20min%20saya%20berminat%20memesan%20sablon%20kaos%20di%20Alfaza%20Merch" class="block bg-teal-600 text-white px-4 py-2 rounded-md">Chat Admin</a>
+    </div>
+  </nav>
+ <!-- endnavbar -->
+
+ <div class="jin">
+    <h2>SEMUA PRODUCT</h2>
+ </div>
+
+<!-- <div class="container flex flex-col flex-wrap md:flex-row gap-8 my-6 justify-center items-center">
+    <div class="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div class="px-4 py-2">
+        <h1 class="text-xl font-bold text-gray-800 uppercase dark:text-white">NIKE AIR</h1>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+    </div>
+
+    <img class="object-cover w-full h-48 mt-2" src="image/cowo.jpg" alt="NIKE AIR">
+
+    <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+        <h1 class="text-lg font-bold text-white">$129</h1>
+        <button class="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+    </div>
+</div>
+<div class="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div class="px-4 py-2">
+        <h1 class="text-xl font-bold text-gray-800 uppercase dark:text-white">NIKE AIR</h1>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+    </div>
+
+    <img class="object-cover w-full h-48 mt-2" src="image/cewe.jpg" alt="NIKE AIR">
+
+    <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+        <h1 class="text-lg font-bold text-white">$129</h1>
+        <button class="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+    </div>
+</div>
+<div class="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div class="px-4 py-2">
+        <h1 class="text-xl font-bold text-gray-800 uppercase dark:text-white">NIKE AIR</h1>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+    </div>
+
+    <img class="object-cover w-full h-48 mt-2" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80" alt="NIKE AIR">
+
+    <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+        <h1 class="text-lg font-bold text-white">$129</h1>
+        <button class="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+    </div>
+</div>
+<div class="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div class="px-4 py-2">
+        <h1 class="text-xl font-bold text-gray-800 uppercase dark:text-white">NIKE AIR</h1>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+    </div>
+
+    <img class="object-cover w-full h-48 mt-2" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80" alt="NIKE AIR">
+
+    <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+        <h1 class="text-lg font-bold text-white">$129</h1>
+        <button class="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+    </div>
+</div>
+<div class="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div class="px-4 py-2">
+        <h1 class="text-xl font-bold text-gray-800 uppercase dark:text-white">NIKE AIR</h1>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+    </div>
+
+    <img class="object-cover w-full h-48 mt-2" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80" alt="NIKE AIR">
+
+    <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+        <h1 class="text-lg font-bold text-white">$129</h1>
+        <button class="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+    </div>
+</div>
+<div class="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div class="px-4 py-2">
+        <h1 class="text-xl font-bold text-gray-800 uppercase dark:text-white">NIKE AIR</h1>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+    </div>
+
+    <img class="object-cover w-full h-48 mt-2" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80" alt="NIKE AIR">
+
+    <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+        <h1 class="text-lg font-bold text-white">$129</h1>
+        <button class="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+    </div>
+</div>
+<div class="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div class="px-4 py-2">
+        <h1 class="text-xl font-bold text-gray-800 uppercase dark:text-white">NIKE AIR</h1>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+    </div>
+
+    <img class="object-cover w-full h-48 mt-2" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80" alt="NIKE AIR">
+
+    <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+        <h1 class="text-lg font-bold text-white">$129</h1>
+        <button class="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+    </div>
+</div>
+<div class="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div class="px-4 py-2">
+        <h1 class="text-xl font-bold text-gray-800 uppercase dark:text-white">NIKE AIR</h1>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+    </div>
+
+    <img class="object-cover w-full h-48 mt-2" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80" alt="NIKE AIR">
+
+    <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+        <h1 class="text-lg font-bold text-white">$129</h1>
+        <button class="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+    </div>
+</div>
+<div class="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div class="px-4 py-2">
+        <h1 class="text-xl font-bold text-gray-800 uppercase dark:text-white">NIKE AIR</h1>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+    </div>
+
+    <img class="object-cover w-full h-48 mt-2" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80" alt="NIKE AIR">
+
+    <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+        <h1 class="text-lg font-bold text-white">$129</h1>
+        <button class="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+    </div>
+</div>
+<div class="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div class="px-4 py-2">
+        <h1 class="text-xl font-bold text-gray-800 uppercase dark:text-white">NIKE AIR</h1>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+    </div>
+
+    <img class="object-cover w-full h-48 mt-2" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80" alt="NIKE AIR">
+
+    <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+        <h1 class="text-lg font-bold text-white">$129</h1>
+        <button class="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+    </div>
+</div>
+<div class="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div class="px-4 py-2">
+        <h1 class="text-xl font-bold text-gray-800 uppercase dark:text-white">NIKE AIR</h1>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+    </div>
+
+    <img class="object-cover w-full h-48 mt-2" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80" alt="NIKE AIR">
+
+    <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+        <h1 class="text-lg font-bold text-white">$129</h1>
+        <button class="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+    </div>
+</div>
+<div class="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div class="px-4 py-2">
+        <h1 class="text-xl font-bold text-gray-800 uppercase dark:text-white">NIKE AIR</h1>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+    </div>
+
+    <img class="object-cover w-full h-48 mt-2" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80" alt="NIKE AIR">
+
+    <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+        <h1 class="text-lg font-bold text-white">$129</h1>
+        <button class="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+    </div>
+</div>
+</div> -->
+
+<div class="container grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto py-8">
+    <a href="#" class="relative block rounded-tr-3xl border border-gray-100 md:mx-0 mx-2">
+  <span
+    class="absolute -top-px -right-px rounded-tr-3xl rounded-bl-3xl bg-rose-600 px-6 py-4 font-medium tracking-widest text-white uppercase"
+  >
+    Save 10%
+  </span>
+
+  <img
+    src="image/cewe.jpg"
+    alt=""
+    class="h-80 w-full rounded-tr-3xl object-cover"
+  />
+
+  <div class="p-4 text-center">
+    <strong class="text-xl font-medium text-gray-900"> Aloe Vera </strong>
+
+    <p class="mt-2 text-pretty text-gray-700">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia rem vel voluptatum in
+      eum vitae aliquid at sed dignissimos.
+    </p>
+
+    <span
+      class="mt-4 block rounded-md border border-indigo-900 bg-indigo-900 px-5 py-3 text-sm font-medium tracking-widest text-white uppercase transition-colors hover:bg-white hover:text-indigo-900"
+    >
+      Learn More
+    </span>
+  </div>
+</a>
+
+ <a href="#" class="relative block rounded-tr-3xl border border-gray-100 md:mx-0 mx-2">
+  <span
+    class="absolute -top-px -right-px rounded-tr-3xl rounded-bl-3xl bg-rose-600 px-6 py-4 font-medium tracking-widest text-white uppercase"
+  >
+    Save 10%
+  </span>
+
+  <img
+    src="image/cewe.jpg"
+    alt=""
+    class="h-80 w-full rounded-tr-3xl object-cover"
+  />
+
+  <div class="p-4 text-center">
+    <strong class="text-xl font-medium text-gray-900"> Aloe Vera </strong>
+
+    <p class="mt-2 text-pretty text-gray-700">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia rem vel voluptatum in
+      eum vitae aliquid at sed dignissimos.
+    </p>
+
+    <span
+      class="mt-4 block rounded-md border border-indigo-900 bg-indigo-900 px-5 py-3 text-sm font-medium tracking-widest text-white uppercase transition-colors hover:bg-white hover:text-indigo-900"
+    >
+      Learn More
+    </span>
+  </div>
+</a>
+
+ <a href="#" class="relative block rounded-tr-3xl border border-gray-100 md:mx-0 mx-2">
+  <span
+    class="absolute -top-px -right-px rounded-tr-3xl rounded-bl-3xl bg-rose-600 px-6 py-4 font-medium tracking-widest text-white uppercase"
+  >
+    Save 10%
+  </span>
+
+  <img
+    src="image/cewe.jpg"
+    alt=""
+    class="h-80 w-full rounded-tr-3xl object-cover"
+  />
+
+  <div class="p-4 text-center">
+    <strong class="text-xl font-medium text-gray-900"> Aloe Vera </strong>
+
+    <p class="mt-2 text-pretty text-gray-700">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia rem vel voluptatum in
+      eum vitae aliquid at sed dignissimos.
+    </p>
+
+    <span
+      class="mt-4 block rounded-md border border-indigo-900 bg-indigo-900 px-5 py-3 text-sm font-medium tracking-widest text-white uppercase transition-colors hover:bg-white hover:text-indigo-900"
+    >
+      Learn More
+    </span>
+  </div>
+</a>
+ <a href="#" class="relative block rounded-tr-3xl border border-gray-100 md:mx-0 mx-2">
+  <span
+    class="absolute -top-px -right-px rounded-tr-3xl rounded-bl-3xl bg-rose-600 px-6 py-4 font-medium tracking-widest text-white uppercase"
+  >
+    Save 10%
+  </span>
+
+  <img
+    src="image/cewe.jpg"
+    alt=""
+    class="h-80 w-full rounded-tr-3xl object-cover"
+  />
+
+  <div class="p-4 text-center">
+    <strong class="text-xl font-medium text-gray-900"> Aloe Vera </strong>
+
+    <p class="mt-2 text-pretty text-gray-700">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia rem vel voluptatum in
+      eum vitae aliquid at sed dignissimos.
+    </p>
+
+    <span
+      class="mt-4 block rounded-md border border-indigo-900 bg-indigo-900 px-5 py-3 text-sm font-medium tracking-widest text-white uppercase transition-colors hover:bg-white hover:text-indigo-900"
+    >
+      Learn More
+    </span>
+  </div>
+</a>
+ <a href="#" class="relative block rounded-tr-3xl border border-gray-100 md:mx-0 mx-2">
+  <span
+    class="absolute -top-px -right-px rounded-tr-3xl rounded-bl-3xl bg-rose-600 px-6 py-4 font-medium tracking-widest text-white uppercase"
+  >
+    Save 10%
+  </span>
+
+  <img
+    src="image/cewe.jpg"
+    alt=""
+    class="h-80 w-full rounded-tr-3xl object-cover"
+  />
+
+  <div class="p-4 text-center">
+    <strong class="text-xl font-medium text-gray-900"> Aloe Vera </strong>
+
+    <p class="mt-2 text-pretty text-gray-700">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia rem vel voluptatum in
+      eum vitae aliquid at sed dignissimos.
+    </p>
+
+    <span
+      class="mt-4 block rounded-md border border-indigo-900 bg-indigo-900 px-5 py-3 text-sm font-medium tracking-widest text-white uppercase transition-colors hover:bg-white hover:text-indigo-900"
+    >
+      Learn More
+    </span>
+  </div>
+</a>
+ <a href="#" class="relative block rounded-tr-3xl border border-gray-100 md:mx-0 mx-2">
+  <span
+    class="absolute -top-px -right-px rounded-tr-3xl rounded-bl-3xl bg-rose-600 px-6 py-4 font-medium tracking-widest text-white uppercase"
+  >
+    Save 10%
+  </span>
+
+  <img
+    src="image/cewe.jpg"
+    alt=""
+    class="h-80 w-full rounded-tr-3xl object-cover"
+  />
+
+  <div class="p-4 text-center">
+    <strong class="text-xl font-medium text-gray-900"> Aloe Vera </strong>
+
+    <p class="mt-2 text-pretty text-gray-700">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia rem vel voluptatum in
+      eum vitae aliquid at sed dignissimos.
+    </p>
+
+    <span
+      class="mt-4 block rounded-md border border-indigo-900 bg-indigo-900 px-5 py-3 text-sm font-medium tracking-widest text-white uppercase transition-colors hover:bg-white hover:text-indigo-900"
+    >
+      Learn More
+    </span>
+  </div>
+</a>
+ <a href="#" class="relative block rounded-tr-3xl border border-gray-100 md:mx-0 mx-2">
+  <span
+    class="absolute -top-px -right-px rounded-tr-3xl rounded-bl-3xl bg-rose-600 px-6 py-4 font-medium tracking-widest text-white uppercase"
+  >
+    Save 10%
+  </span>
+
+  <img
+    src="image/cewe.jpg"
+    alt=""
+    class="h-80 w-full rounded-tr-3xl object-cover"
+  />
+
+  <div class="p-4 text-center">
+    <strong class="text-xl font-medium text-gray-900"> Aloe Vera </strong>
+
+    <p class="mt-2 text-pretty text-gray-700">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia rem vel voluptatum in
+      eum vitae aliquid at sed dignissimos.
+    </p>
+
+    <span
+      class="mt-4 block rounded-md border border-indigo-900 bg-indigo-900 px-5 py-3 text-sm font-medium tracking-widest text-white uppercase transition-colors hover:bg-white hover:text-indigo-900"
+    >
+      Learn More
+    </span>
+  </div>
+</a>
+
+
+</div>
+
+
+<!-- footer -->
+ 
+<div class="mt-[-100px] md:mt-[-80px]">
+<footer class="bg-white">
+  <div class="mx-auto max-w-screen-xl px-4 pt-16 pb-8 sm:px-6 lg:px-8">
+    
+
+    <div class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
+      <div class="mx-auto max-w-sm lg:max-w-none">
+        <p class="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">
+         Butuh sablon kaos DTF berkualitas? Di sini tempatnya! Hasil cetak tajam, awet meski sering dicuci, dan sudah dipercaya banyak pelanggan. Yuk, order sekarang.
+        </p>
+
+        <div class="mt-6 flex justify-center gap-4 lg:justify-start">
+         <a href="https://web.facebook.com/profile.php?id=61574962905835" target="_blank" rel="noreferrer" 
+     class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-gray-600 transition">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.2V12h2.5l-.4 3h-2v7A10 10 0 0 0 22 12z"/>
+    </svg>
+  </a>
+
+  <!-- TikTok -->
+  <a href="https://www.tiktok.com/@alfazamerch" target="_blank" rel="noreferrer" 
+     class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-gray-600 transition">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 256 256">
+      <path d="M192 56a48 48 0 01-48-48h-32v152a32 32 0 11-32-32v-32a64 64 0 1064 64V96a79.4 79.4 0 0048 16z"/>
+    </svg>
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/6285601758283" target="_blank" rel="noreferrer" 
+     class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-gray-600 transition">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 256 256">
+      <path d="M128 24a104 104 0 00-88.4 160.7L32 232l48.2-7.6A104 104 0 10128 24zm0 192a88 88 0 01-44.2-11.8l-3.4-2-28.6 4.5 4.7-27.9-1.8-3.5A88 88 0 11128 216zm47.1-64.9c-2.6-1.3-15.4-7.6-17.8-8.5s-4.1-1.3-5.8 1.3-6.6 8.5-8.1 10.2-3 1.9-5.6.6c-15.2-7.6-25.2-13.6-35.3-30.9-2.7-4.7 2.7-4.4 7.6-14.7.9-1.9.5-3.5-.3-4.8s-5.8-13.9-8-19c-2.1-5-4.2-4.3-5.8-4.4-1.5-.1-3.3-.1-5.1-.1s-4.8.6-7.3 3.5-9.6 9.4-9.6 22.9 9.8 26.6 11.1 28.5 19.3 29.5 46.8 41.4c6.5 2.8 11.6 4.5 15.6 5.8 6.5 2.1 12.4 1.8 17.1 1.1 5.2-.8 15.9-6.5 18.1-12.8s2.2-11.7 1.5-12.8c-.6-1.1-2.4-1.8-5-3.1z"/>
+    </svg>
+  </a>
+
+  <!-- YouTube -->
+  <a href="https://www.youtube.com/@ibnuofficial017" target="_blank" rel="noreferrer" 
+     class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-gray-600 transition">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 256 256">
+      <path d="M250.3 80.7a32 32 0 00-22.5-22.6C213.5 54 128 54 128 54s-85.5 0-99.8 4.1a32 32 0 00-22.5 22.6C2 95.1 2 128 2 128s0 32.9 3.7 47.3a32 32 0 0022.5 22.6C42.5 202 128 202 128 202s85.5 0 99.8-4.1a32 32 0 0022.5-22.6C254 160.9 254 128 254 128s0-32.9-3.7-47.3zM104 160V96l64 32-64 32z"/>
+    </svg>
+  </a>
+         
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-8 text-center lg:grid-cols-2 lg:text-left">
+        
+
+        <div>
+          <strong class="font-medium text-2xl text-gray-900"> Menu </strong>
+
+          <ul class="mt-6 space-y-1">
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="index.html"> Home </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="product.html"> Product </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="faq.html"> FAQ </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="about.html"> About Us </a>
+            </li>
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="order.html"> Order </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <strong class="font-medium text-2xl text-gray-900"> Kontak </strong>
+
+          <ul class="mt-6 space-y-1">
+            <li>
+              <p><span class="material-symbols-outlined" style="font-size: 18px;">
+mark_email_unread
+</span> alfazamerch@gmail.com</p>
+            </li>
+
+            <li>
+              <p> <span class="material-symbols-outlined" style="font-size: 18px;">
+add_call
+</span> +62 856 0175 8283</p>
+            </li>
+
+            <li>
+             <p><span class="material-symbols-outlined" style="font-size: 18px;">
+add_location_alt
+</span> Jl. Tirta Samudra RT 16/05 Bandengan</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-16 border-t border-gray-100 pt-8">
+      <p class="text-center text-xs/relaxed text-gray-500">
+        Copyright 2025 © Alfaza Merch
+      </p>
+    </div>
+  </div>
+</footer>
+</div>
+
+
+
+</body>
+<script>
+    const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu')
+
+btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+});
+
+</script>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alfaza merch</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <link rel="icon" type="image/x-icon" href="image/am.png">
+     <style>
+        @media (max-width:768px){
+            .am img{
+             width: 50px;
+             }
+        }
+     </style>
+</head>
+<body>
+    <!-- navbar -->
+  <nav class="py-0 md:py-4 bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        
+        <!-- Logo -->
+        <div class="flex items-center">
+          <div class="am">
+            <img src="image/am.png" width="90px" alt=""> 
+          </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="index.html" class="text-gray-700 hover:text-teal-600">Home</a>
+          <a href="product.html" class="text-gray-700 hover:text-teal-600">Product</a>
+          <a href="faq.html" class="text-gray-700 hover:text-teal-600">FAQ</a>
+          <a href="about.html" class="text-gray-700 hover:text-teal-600">About Us</a>
+          <a href="order.html" class="text-gray-700 hover:text-teal-600">Order</a>
+        </div>
+
+        <!-- Login / Register -->
+        <div class="hidden md:flex space-x-3 items-center">
+            <a href="faq.html" class="bg-gray-100 text-teal-600 px-4 py-2 rounded-md hover:bg-gray-200">Cara Belanja</a>
+            <a href="https://wa.me/6285601758283
+?text=hi%20min%20saya%20berminat%20memesan%20sablon%20kaos%20di%20Alfaza%20Merch" class="bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700">Chat Admin</a>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="text-gray-700 focus:outline-none">
+            <span class="material-symbols-outlined">
+menu
+</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden px-4 pb-4 space-y-2">
+      <a href="index.html" class="block text-gray-700 hover:text-teal-600">Home</a>
+      <a href="product.html" class="block text-gray-700 hover:text-teal-600">Product</a>
+      <a href="faq.html" class="block text-gray-700 hover:text-teal-600">FAQ</a>
+      <a href="about.html" class="block text-gray-700 hover:text-teal-600">About Us</a>
+      <a href="order.html" class="block text-gray-700 hover:text-teal-600">Order</a>
+      <a href="faq.html" class="block bg-gray-100 text-teal-600 px-4 py-2 rounded-md">Cara Belanja</a>
+      <a href="https://wa.me/6285601758283
+?text=hi%20min%20saya%20berminat%20memesan%20sablon%20kaos%20di%20Alfaza%20Merch" class="block bg-teal-600 text-white px-4 py-2 rounded-md">Chat Admin</a>
+    </div>
+  </nav>
+ <!-- endnavbar -->
+
+<section>
+  <div class="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+      <div class="bg-blue-600 p-8 md:p-12 lg:px-16 lg:py-24">
+        <div class="mx-auto max-w-xl text-center">
+          <h2 class="text-2xl font-bold text-white md:text-3xl">
+           "Kesederhanaan yang dirancang rapi, menghadirkan gaya yang abadi."
+          </h2>
+
+          <p class="hidden text-white/90 sm:mt-4 sm:block">
+            Kami percaya bahwa gaya terbaik adalah gaya yang tahan lama. Kaos sablon minimalis kami menghadirkan desain bersih dan elegan, menjadikannya pilihan tepat untukmu yang ingin selalu tampil effortless namun tetap berkesan.
+          </p>
+
+          <!-- <div class="mt-4 md:mt-8">
+            <a
+              href="#"
+              class="inline-block rounded-sm border border-white bg-white px-12 py-3 text-sm font-medium text-blue-500 transition hover:bg-transparent hover:text-white "
+            >
+              Get Started Today
+            </a>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-1 lg:grid-cols-2">
+        <img
+          alt=""
+          src="image/cowo.jpg"
+          class="h-40 w-full object-cover sm:h-56 md:h-full"
+        />
+
+        <img
+          alt=""
+          src="image/cewe.jpg"
+          class="h-40 w-full object-cover sm:h-56 md:h-full"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ <div class="tulis my-4">
+        <h2 class="font-bold text-center text-3xl">PERTANYAAN?</h2>
+    </div>
+<div class="space-y-4 mx-8 my-5 md:mx-20 md:my-10">
+   
+  <details
+    class="group border-s-4 border-gray-200 bg-gray-50 p-4 [&_summary::-webkit-details-marker]:hidden"
+    open
+  >
+    <summary class="flex items-center justify-between gap-1.5 text-gray-900">
+      <h2 class="text-lg font-medium">Apa itu Alfaza Merch?</h2>
+
+      <svg
+        class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+
+    <p class="pt-4 text-gray-900">
+     Alfaza Merch merupakan jasa sablon kaos <b>DTF</b> yang sudah terpercaya, serta menghandle sendiri semua proses produksi mulai dari pengadaan bahan baku sampai produk jadi dengan proses Quality Control yang ketat.
+    </p>
+  </details>
+
+  
+  <details
+    class="group border-s-4 border-gray-200 bg-gray-50 p-4 [&_summary::-webkit-details-marker]:hidden"
+  >
+    <summary class="flex items-center justify-between gap-1.5 text-gray-900">
+      <h2 class="text-lg font-medium">Apa bahan yang digunakan?</h2>
+
+      <svg
+        class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+
+    <p class="pt-4 text-gray-900">
+      Kaos sablon kami terbuat dari bahan <b>Premium</b> yang nyaman digunakan untuk aktivitas sehari-hari.
+    </p>
+  </details>
+
+   <details
+    class="group border-s-4 border-gray-200 bg-gray-50 p-4 [&_summary::-webkit-details-marker]:hidden"
+  >
+    <summary class="flex items-center justify-between gap-1.5 text-gray-900">
+      <h2 class="text-lg font-medium">Apakah ready stock?</h2>
+
+      <svg
+        class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+
+    <p class="pt-4 text-gray-900">
+     Iya, kaos sablon kami <b>ready</b> stock ratusan pcs, jadi tidak perlu khawatir kehabisan stok.
+    </p>
+  </details>
+  <details
+    class="group border-s-4 border-gray-200 bg-gray-50 p-4 [&_summary::-webkit-details-marker]:hidden"
+  >
+    <summary class="flex items-center justify-between gap-1.5 text-gray-900">
+      <h2 class="text-lg font-medium">Kalau belum punya designnya, bagaimana ya?</h2>
+
+      <svg
+        class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+
+    <p class="pt-4 text-gray-900">
+     <b>Tenang</b>, Alfaza Merch memiliki tim yang siap sedia membantu membuatkan desain sesuai keinginan kalian (dalam bentuk mock up).
+    </p>
+  </details>
+  <details
+    class="group border-s-4 border-gray-200 bg-gray-50 p-4 [&_summary::-webkit-details-marker]:hidden"
+  >
+    <summary class="flex items-center justify-between gap-1.5 text-gray-900">
+      <h2 class="text-lg font-medium">Pengerjaan berapa lama ya?</h2>
+
+      <svg
+        class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+
+    <p class="pt-4 text-gray-900">
+     Pengerjaan sablon berkisar antara <b>3-4 hari</b> saja dari desain masuk & DP diterima. Jika butuh lebih cepat, bisa dikoordinasikan langsung dengan <i>Customer Service kami.</i>
+    </p>
+  </details>
+  <details
+    class="group border-s-4 border-gray-200 bg-gray-50 p-4 [&_summary::-webkit-details-marker]:hidden"
+  >
+    <summary class="flex items-center justify-between gap-1.5 text-gray-900">
+      <h2 class="text-lg font-medium">Cara ordernya bagaimana ya?</h2>
+
+      <svg
+        class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+
+    <p class="pt-4 text-gray-900">
+    Bisa langsung menghubungi Customer Service kami via WhatsApp di nomor <b>085601758283</b> (Fast Respon)
+    </p>
+  </details>
+  <details
+    class="group border-s-4 border-gray-200 bg-gray-50 p-4 [&_summary::-webkit-details-marker]:hidden"
+  >
+    <summary class="flex items-center justify-between gap-1.5 text-gray-900">
+      <h2 class="text-lg font-medium">Cara bayar orederannya bagaimana ya?</h2>
+
+      <svg
+        class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+
+    <p class="pt-4 text-gray-900">
+     Transfer via <b>BRI, BANK JATENG</b> atas nama Ilham Firdaus.
+    </p>
+  </details>
+  <details
+    class="group border-s-4 border-gray-200 bg-gray-50 p-4 [&_summary::-webkit-details-marker]:hidden"
+  >
+    <summary class="flex items-center justify-between gap-1.5 text-gray-900">
+      <h2 class="text-lg font-medium">Bisi kirim pakai apa aja?</h2>
+
+      <svg
+        class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+
+    <p class="pt-4 text-gray-900">
+- Luar kota / luar pulau : <b>JNE, Sicepat, J&T, Kantor POS.</b> <br>
+Jika ada permintaan ekspedisi lain bisa kami bantu
+    </p>
+  </details>
+  <details
+    class="group border-s-4 border-gray-200 bg-gray-50 p-4 [&_summary::-webkit-details-marker]:hidden"
+  >
+    <summary class="flex items-center justify-between gap-1.5 text-gray-900">
+      <h2 class="text-lg font-medium">Mengapa harus Alfaza Merch?</h2>
+
+      <svg
+        class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </summary>
+
+    <p class="pt-4 text-gray-900">
+    Kami berkomitmen untuk memberikan pelayanan terbaik dengan produk yang berkualitas. <b>Buktikan sekarang.</b>
+    </p>
+  </details>
+ 
+</div>
+
+
+<!-- footer -->
+ 
+<div class="mt-[-100px] md:mt-[-80px]">
+<footer class="bg-white">
+  <div class="mx-auto max-w-screen-xl px-4 pt-16 pb-8 sm:px-6 lg:px-8">
+    
+
+    <div class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
+      <div class="mx-auto max-w-sm lg:max-w-none">
+        <p class="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">
+         Butuh sablon kaos DTF berkualitas? Di sini tempatnya! Hasil cetak tajam, awet meski sering dicuci, dan sudah dipercaya banyak pelanggan. Yuk, order sekarang.
+        </p>
+
+        <div class="mt-6 flex justify-center gap-4 lg:justify-start">
+         <a href="https://web.facebook.com/profile.php?id=61574962905835" target="_blank" rel="noreferrer" 
+     class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-gray-600 transition">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.2V12h2.5l-.4 3h-2v7A10 10 0 0 0 22 12z"/>
+    </svg>
+  </a>
+
+  <!-- TikTok -->
+  <a href="https://www.tiktok.com/@alfazamerch" target="_blank" rel="noreferrer" 
+     class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-gray-600 transition">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 256 256">
+      <path d="M192 56a48 48 0 01-48-48h-32v152a32 32 0 11-32-32v-32a64 64 0 1064 64V96a79.4 79.4 0 0048 16z"/>
+    </svg>
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/6285601758283" target="_blank" rel="noreferrer" 
+     class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-gray-600 transition">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 256 256">
+      <path d="M128 24a104 104 0 00-88.4 160.7L32 232l48.2-7.6A104 104 0 10128 24zm0 192a88 88 0 01-44.2-11.8l-3.4-2-28.6 4.5 4.7-27.9-1.8-3.5A88 88 0 11128 216zm47.1-64.9c-2.6-1.3-15.4-7.6-17.8-8.5s-4.1-1.3-5.8 1.3-6.6 8.5-8.1 10.2-3 1.9-5.6.6c-15.2-7.6-25.2-13.6-35.3-30.9-2.7-4.7 2.7-4.4 7.6-14.7.9-1.9.5-3.5-.3-4.8s-5.8-13.9-8-19c-2.1-5-4.2-4.3-5.8-4.4-1.5-.1-3.3-.1-5.1-.1s-4.8.6-7.3 3.5-9.6 9.4-9.6 22.9 9.8 26.6 11.1 28.5 19.3 29.5 46.8 41.4c6.5 2.8 11.6 4.5 15.6 5.8 6.5 2.1 12.4 1.8 17.1 1.1 5.2-.8 15.9-6.5 18.1-12.8s2.2-11.7 1.5-12.8c-.6-1.1-2.4-1.8-5-3.1z"/>
+    </svg>
+  </a>
+
+  <!-- YouTube -->
+  <a href="https://www.youtube.com/@ibnuofficial017" target="_blank" rel="noreferrer" 
+     class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-gray-600 transition">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 256 256">
+      <path d="M250.3 80.7a32 32 0 00-22.5-22.6C213.5 54 128 54 128 54s-85.5 0-99.8 4.1a32 32 0 00-22.5 22.6C2 95.1 2 128 2 128s0 32.9 3.7 47.3a32 32 0 0022.5 22.6C42.5 202 128 202 128 202s85.5 0 99.8-4.1a32 32 0 0022.5-22.6C254 160.9 254 128 254 128s0-32.9-3.7-47.3zM104 160V96l64 32-64 32z"/>
+    </svg>
+  </a>
+         
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-8 text-center lg:grid-cols-2 lg:text-left">
+        
+
+        <div>
+          <strong class="font-medium text-2xl text-gray-900"> Menu </strong>
+
+          <ul class="mt-6 space-y-1">
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="index.html"> Home </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="product.html"> Product </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="faq.html"> FAQ </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="about.html"> About Us </a>
+            </li>
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="order.html"> Order </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <strong class="font-medium text-2xl text-gray-900"> Kontak </strong>
+
+          <ul class="mt-6 space-y-1">
+            <li>
+              <p><span class="material-symbols-outlined" style="font-size: 18px;">
+mark_email_unread
+</span> alfazamerch@gmail.com</p>
+            </li>
+
+            <li>
+              <p> <span class="material-symbols-outlined" style="font-size: 18px;">
+add_call
+</span> +62 856 0175 8283</p>
+            </li>
+
+            <li>
+             <p><span class="material-symbols-outlined" style="font-size: 18px;">
+add_location_alt
+</span> Jl. Tirta Samudra RT 16/05 Bandengan</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-16 border-t border-gray-100 pt-8">
+      <p class="text-center text-xs/relaxed text-gray-500">
+        Copyright 2025 © Alfaza Merch
+      </p>
+    </div>
+  </div>
+</footer>
+</div>
+
+
+
+</body>
+<script>
+    const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu')
+
+btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+});
+
+</script>
+</html>
